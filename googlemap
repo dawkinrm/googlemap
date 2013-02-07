@@ -152,4 +152,4 @@ for (i = 0; i < markers.length; i++) {
         }
     })(marker, i));
 }
-
+<!--Code by DreamDealer.net, Johan.
