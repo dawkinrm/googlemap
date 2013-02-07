@@ -1,0 +1,20 @@
+function initializeMaps() {
+    var latlng = new google.maps.LatLng(-33.92, 151.25);
+    var myOptions = {
+        zoom: 10,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+}
+var markers = [
+  [36.865319,-76.050795],
+  [42.065540,-87.987372],
+  [38.123116,-79.087101],
+  [38.082470,-78.554728],
+  [45.853382,8.983814],
+  [38.364829,-78.996689],
+  [38.868727,-78.634200],
+  [38.914697,-77.389860],
+  [
