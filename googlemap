@@ -1,13 +1,3 @@
-function initializeMaps() {
-    var latlng = new google.maps.LatLng(-33.92, 151.25);
-    var myOptions = {
-        zoom: 10,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        mapTypeControl: false
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
-}
 var markers = {
       [36.865319,-76.050795],
       [42.065540,-87.987372],
@@ -162,4 +152,4 @@ for (i = 0; i < markers.length; i++) {
         }
     })(marker, i));
 }
-//code from DreamDealer.nl
+
