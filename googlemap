@@ -149,3 +149,17 @@ var markers = {
     [38.1499065,-78.4979248],
     [38.1499065,-78.4979248],
 };
+var infowindow = new google.maps.InfoWindow(), marker, i;
+for (i = 0; i < markers.length; i++) {  
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+        map: map
+    });
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+            infowindow.setContent(markers[i][0]);
+            infowindow.open(map, marker);
+        }
+    })(marker, i));
+}
+//code from DreamDealer.nl
